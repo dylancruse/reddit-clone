@@ -19,6 +19,5 @@ from redditclone import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('redditclone/', include('redditclone.urls')),
-    path('', views.index, name='index')
+    path('', include('redditclone.urls'))
 ]
