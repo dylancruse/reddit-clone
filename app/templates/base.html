@@ -4,12 +4,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
     <title></title>
   </head>
 
   <body>
+    {% include "partials/header.html" %}
+    
     <main role="main" class="container">
       {% block main_content %}{% endblock%}
     </main>
