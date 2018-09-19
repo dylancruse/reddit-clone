@@ -1,3 +1,17 @@
 .container {
     margin-left: 10px;
 }
+
+.navbar {
+    background: white;
+    padding: 1px 1px 1px 10px;
+}
+
+body {
+    background: aliceblue;
+}
+
+#posts {
+    background: white;
+    margin-left: 0px;
+}

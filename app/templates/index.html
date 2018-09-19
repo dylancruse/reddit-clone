@@ -5,14 +5,16 @@
     <div>
         <h2>Home Page Under Construction</h2>
     </div>
-    <table>
-        {% for post in posts %}
-        <tr>
-            <td>{{ post.title }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    <div class="container" id="posts">
+        <table>
+            {% for post in posts %}
+            <tr>
+                <td>{{ post.title }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
 </div>
 
-<a class="btn btn-success btn-primary" href="/create" role="button">Create New Post</a>
+<a class="btn btn-success btn-primary" href="create" role="button">Create New Post</a>
 {% endblock %}

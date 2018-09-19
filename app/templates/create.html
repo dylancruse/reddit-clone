@@ -1,7 +1,22 @@
 {% extends "base.html" %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
 
 {% block main_content %}
 <div>
-    <p class="lead">Create Post View</p>
+    <h1>Create new post</h1>
+    <form class="" action="" method="post">
+        {% csrf_token %}
+        <!--<div class="fieldWrapper">-->
+        <!--    {{ form.title|as_crispy_field }}-->
+        <!--</div>-->
+        <!--<div class="fieldWrapper">-->
+        <!--    {{ form.body|as_crispy_field }}-->
+        <!--</div>-->
+        {{ form|crispy }}
+        {% buttons %}
+            <button type="submit" class="btn btn-primary">Submit</button>
+        {% endbuttons %}
+    </form>
 </div>
 {% endblock %}
