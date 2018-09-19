@@ -21,5 +21,7 @@ from redditclone import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
+    # path('login', auth_views.login, name='login'),
+    # path('logout', auth_views.logout, {'next_page': '/'}, name='logout'),
     path('', include('redditclone.urls'))
 ]
